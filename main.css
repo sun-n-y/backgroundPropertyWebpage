@@ -20,7 +20,7 @@ body {
 
 .hero {
   background: url("./hero-bcg.jpg");
-  background: linear-gradient(brown);
+  background: linear-gradient();
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 108px);
