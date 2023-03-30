@@ -12,14 +12,15 @@ body {
 }
 
 header {
+  height: 5rem;
   background: black;
+  padding: 1rem 0;
 }
 
 .nav-center {
   width: 90vw;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 24px;
 }
 
 .nav-title {
@@ -27,4 +28,46 @@ header {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-section {
+  min-height: calc(100vh - 5rem);
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0)
+    ),
+    url(./mango-bkgrd.jpg) center/cover no-repeat;
+}
+
+.hero-center {
+  width: 90vw;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.hero-center h1 {
+  text-transform: uppercase;
+  color: aqua;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+}
+
+.hero-center p {
+  max-width: 700px;
+  min-width: 500px;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.hero-center button {
+  background: transparent;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 5px solid green;
 }
