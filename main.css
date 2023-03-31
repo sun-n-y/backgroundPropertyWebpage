@@ -16,6 +16,9 @@ body {
   height: 5rem;
   background: #222;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .nav-title {
@@ -32,13 +35,20 @@ body {
 }
 
 .hero {
-  background: linear-gradient(
-      to right,
-      rgba(105, 62, 27, 0.5),
-      rgba(105, 62, 27, 1)
-    ),
-    url("./hero-bcg.jpg") center/cover no-repeat;
+  background: rgb(105, 62, 27);
   min-height: calc(100vh - 5rem);
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        rgba(105, 62, 27, 0.5),
+        rgba(105, 62, 27, 1)
+      ),
+      url("./hero-bcg.jpg") center/cover no-repeat;
+  }
 }
 
 .hero-center {
@@ -47,6 +57,11 @@ body {
   margin: 0 auto;
   padding: 5rem 0;
   color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .hero-center h1 {
@@ -56,6 +71,7 @@ body {
 
 .hero-center p {
   max-width: 35em;
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -65,4 +81,9 @@ body {
   padding: 12px 24px;
   margin-top: 2rem;
   letter-spacing: 2px;
+}
+
+.screen2 {
+  min-height: 100vh;
+  background: red;
 }
