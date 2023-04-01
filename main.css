@@ -15,6 +15,9 @@ header {
   height: 5rem;
   background: black;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .nav-center {
@@ -33,34 +36,47 @@ header {
 
 .hero-section {
   min-height: calc(100vh - 5rem);
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0)
-    ),
-    url(./mango-bkgrd.jpg) center/cover no-repeat;
+  background: brown;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-section {
+    min-height: calc(100vh - 5rem);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0)
+      ),
+      url(./mango-bkgrd.jpg) center/cover no-repeat;
+  }
 }
 
 .hero-center {
   width: 90vw;
   max-width: 1320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 5rem 0;
   text-transform: capitalize;
   font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .hero-center h1 {
   text-transform: uppercase;
   color: aqua;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   letter-spacing: 2px;
 }
 
 .hero-center p {
   max-width: 700px;
   min-width: 500px;
-  margin: 1rem 0;
+  margin: 0 auto;
   line-height: 1.5;
 }
 
@@ -70,4 +86,9 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   border: 5px solid green;
+}
+
+.temp {
+  min-height: 100vh;
+  background-color: gray;
 }
