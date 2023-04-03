@@ -67,11 +67,51 @@ body {
 .hero-center h1 {
   letter-spacing: 2px;
   margin-bottom: 0.75rem;
+  animation: moveh1 5s linear 1;
+}
+
+@keyframes moveh1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  /* 50% {
+    opacity: 0.3;
+    transform: translateY(150px);
+  }
+  75% {
+    opacity: 0.7;
+    transform: translateY(100px);
+  } */
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .hero-center p {
   max-width: 35em;
   margin: 0 auto;
+  animation: movep 5s linear 1;
+}
+
+@keyframes movep {
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  /* 50% {
+    opacity: 0.3;
+    transform: translateY(150px);
+  }
+  75% {
+    opacity: 0.7;
+    transform: translateY(100px);
+  } */
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .hero-btn {
@@ -81,6 +121,26 @@ body {
   padding: 12px 24px;
   margin-top: 2rem;
   letter-spacing: 2px;
+  animation: movebtn 5s linear 1;
+}
+
+@keyframes movebtn {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  /* 50% {
+    opacity: 0.3;
+    transform: translateY(150px);
+  }
+  75% {
+    opacity: 0.7;
+    transform: translateY(100px);
+  } */
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .screen2 {
